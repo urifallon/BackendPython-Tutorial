@@ -29,8 +29,8 @@ python manage.py startapp <name>    # Create modul "home"
 
 Create folder templates and `home.html` (1)<br>
 Create def action templates (2) <br>
-Add view to `INSTALLED_APPS` in settings in ProjectBase folder (3)<br>
-Import views for urls (4)
+Add view to `INSTALLED_APPS` in settings (3)<br>
+Import views and add path into urls (4)
 
 ```
 ├── ProjectBase/
@@ -44,4 +44,5 @@ Import views for urls (4)
 │   │   ├── urls.py (4)
 │   │   └── ...
 │   └── ...
+└── ...
 ```
