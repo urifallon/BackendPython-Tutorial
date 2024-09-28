@@ -1,3 +1,5 @@
+# I. Init Project
+
 ## Download frameworks for python website
 
 ```
@@ -46,3 +48,7 @@ Import views and add path into urls (4)
 │   └── ...
 └── ...
 ```
+
+<br>
+
+# II. Init Database
