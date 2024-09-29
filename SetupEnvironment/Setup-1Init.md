@@ -53,7 +53,9 @@ Import views and add path into urls (4)
 
 # II. Init Database
 
-Config database in `settings.py` file (1)
+Config database in `settings.py` file (1)<br>
+Check documentation to see more
+https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
 ```
 ├── ProjectBase/
