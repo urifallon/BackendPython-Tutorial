@@ -52,3 +52,67 @@ Import views and add path into urls (4)
 <br>
 
 # II. Init Database
+
+Config database in `settings.py` file (1)
+
+```
+├── ProjectBase/
+│   ├── home/
+│   ├── ProjectBase/
+│   │   ├── settings.py (1)
+│   │   └── ...
+│   └── ...
+└── ...
+```
+
+## MySQL
+
+Install MySQL for your project<br>
+
+```
+pip install pymysql
+pip install mysqlclient
+```
+
+This MySQL using in the local database with `Xampp`
+
+```
+DATABASES = {
+    "default": {
+        "ENGINE": "django.db.backends.mysql",
+        "NAME": "home",
+        "USER": "root",
+        "PASSWORD": "",
+        "HOST": "127.0.0.1",
+        "PORT": "",
+    }
+}
+```
+
+If has errors you can try add this in to project (2):
+
+```
+├── ProjectBase/
+│   ├── home/
+│   │   └── _init_.py (2)
+│   └── ...
+└── ...
+```
+
+```
+import pymysql
+pymysql.install_as_MySQLdb()
+```
+
+## Sqlite
+
+Open `DB browser` to query in sqlite database
+
+```
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / "db.sqlite3",
+    }
+}
+```
